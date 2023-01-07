@@ -1,0 +1,116 @@
+.s-skills {
+    padding: 96px 48px;
+    background-color: #09090b;
+    padding-bottom: 32px
+}
+
+@media screen and (max-width: 992px) {
+    .s-skills {
+        padding: 48px 24px;
+    }
+}
+
+.s-skills .grid-layout .skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px
+}
+
+.s-skills .grid-layout .skills div {
+    width: 50%
+}
+
+@media screen and (max-width: 1200px) {
+    .s-skills .grid-layout .skills div {
+        width:100%
+    }
+}
+
+.s-skills .grid-layout .skills .skills-text {
+    min-height: 300px
+}
+
+.s-skills .grid-layout .skills .skills-text h2 {
+    margin-bottom: 32px;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 500
+}
+
+.s-skills .grid-layout .skills .skills-text h2 span {
+    color: #00c6e1;
+}
+
+.s-skills .grid-layout .skills .skills-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px
+}
+
+@media screen and (max-width: 1200px) {
+    .s-skills .grid-layout .skills .skills-card {
+        margin-top:48px
+    }
+}
+
+.s-skills .grid-layout .skills .skills-card article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20%;
+    flex-grow: 1;
+    height: 130px;
+    background-color: #040405;
+    position: relative;
+    border: 1px solid #040405;
+    transition: 1s all ease
+}
+
+.s-skills .grid-layout .skills .skills-card article:hover {
+    border: 1px solid #00c6e1;
+}
+
+.s-skills .grid-layout .skills .skills-card article:hover .skills-cards-name,.s-skills .grid-layout .skills .skills-card article:hover .skills-cards-name-low,.s-skills .grid-layout .skills .skills-card article:hover .skills-cards-name-high {
+    display: block;
+    text-align: center
+}
+
+@media screen and (max-width: 768px) {
+    .s-skills .grid-layout .skills .skills-card article {
+        width:40%;
+        margin: 20px 0px
+    }
+}
+
+.s-skills .grid-layout .skills .skills-card article .skills-cards-name,.s-skills .grid-layout .skills .skills-card article .skills-cards-name-low,.s-skills .grid-layout .skills .skills-card article .skills-cards-name-high {
+    left: 50%;
+    height: auto;
+    position: absolute;
+    padding: 5px;
+    transform: translate(-50%, 0%);
+    background-color: #040405;
+    width: 125px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-size: 1rem
+}
+
+.s-skills .grid-layout .skills .skills-card article .skills-cards-name-high {
+    top: -40px
+}
+
+.s-skills .grid-layout .skills .skills-card article .skills-cards-name-low {
+    bottom: -40px
+}
+
+.s-skills .grid-layout .skills .skills-card article .card-item {
+    width: 60px
+}

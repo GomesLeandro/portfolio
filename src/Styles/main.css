@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+.header {
+    padding: 0px 50px;
+    background: #000;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid #000;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 0px 24px;
+    }
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    height: 100%;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.header .nav-menu a {
+    position: relative;
+    padding: 10px 30px;
+    margin: 45px 0;
+    color: #00c6e1;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    transform: 0.5s;
+}
+
+.header .nav-menu a::before {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #00c6e1;
+    border-left: 2px solid #00c6e1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.header .nav-menu a::after {
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #00c6e1;
+    border-right: 2px solid #00c6e1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.header .navbar img {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.header .nav-menu {
+    display: flex;
+}
+
+.header .nav-item {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.header .nav-item a:hover::before,
+.header .nav-item a:hover::after {
+  width: 100%;
+  height: 100%;
+  transition-delay: 0s;
+}
+
+.header .nav-item a:hover {
+    background: #00c6e1;
+    color: #000;
+    box-shadow: 0 0 50px #00c6e1;
+    transition-delay: 0.5s;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+        background-color: #000;
+    }
+
+    .header .navbar {
+        max-width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        height: 90vh;
+        z-index: 999;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: auto;
+    }
+}
+

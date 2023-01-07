@@ -1,0 +1,73 @@
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0
+}
+
+.s-about {
+    padding: 96px 48px;
+    background-color: #09090b;
+}
+
+@media screen and (max-width: 992px) {
+    .s-about {
+        padding: 48px 24px;
+    }
+}
+
+.s-about .grid-layout .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.s-about .grid-layout .about-photo {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 1s all ease;
+    width: 400px;
+}
+
+.s-about .grid-layout .about-photo:hover {
+    transform: scale(1.1)
+}
+
+@media screen and (max-width: 1200px) {
+    .s-about .grid-layout .about-photo {
+        display:none
+    }
+}
+
+.s-about .grid-layout .about-text {
+    width: 50%
+}
+
+@media screen and (max-width: 1200px) {
+    .s-about .grid-layout .about-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+}
+
+.s-about .grid-layout .about h2 {
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.s-about .grid-layout .about h2 span {
+    color: #00c6e1;
+}
+
+.s-about .grid-layout .about p {
+    line-height: 3rem;
+    color: #d8d8d8;
+    font-size: 1.2rem;
+}
+

@@ -1,0 +1,116 @@
+.s-projects {
+    padding: 96px 48px;
+    text-align: center;
+    background-color: #000}
+
+@media screen and (max-width: 992px) {
+    .s-projects {
+        padding:48px 24px
+    }
+}
+
+.s-projects .grid-layout h2 {
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500
+}
+
+.s-projects .grid-layout h2 span {
+    color: #00c6e1
+}
+
+.s-projects .grid-layout .projects {
+    margin: 24px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left
+}
+
+
+.s-projects .grid-layout .projects>article {
+    background-color: #09090b;
+    height: auto;
+    padding: 32px;
+    margin: 8px;
+    flex-basis: calc(33% - 20px);
+    flex-grow: 1;
+    border: 1px solid #09090b;
+    transition: 1s all ease;
+    height: auto
+}
+
+.s-projects .grid-layout .projects>article:hover {
+    border: 1px solid #00c6e1
+}
+
+@media screen and (max-width: 1200px) {
+    .s-projects .grid-layout .projects>article {
+        flex-basis:calc(50% - 20px)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .s-projects .grid-layout .projects>article {
+        flex-basis:calc(100% - 20px)
+    }
+}
+
+.s-projects .grid-layout .projects>article h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500
+}
+
+.s-projects .grid-layout .projects>article p {
+    line-height: 24px;
+    margin: 24px 0px;
+    color: #d8d8d8;
+    line-height: 3.2rem;
+    font-size: 1.8rem
+}
+
+.s-projects .grid-layout a {
+    color: #00c6e1;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.s-projects .grid-layout a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background: linear-gradient(270deg, #00c6e1 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+.s-projects .grid-layout a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
+
+.s-projects .grid-layout a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+.s-projects .grid-layout a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
